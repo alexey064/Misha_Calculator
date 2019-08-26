@@ -28,8 +28,8 @@
         <Button x:Name="_6" Content="6" Grid.Row="3" Grid.Column="2" />
         <Button x:Name="sqr" Content="^2" Grid.Row="3" Grid.Column="3" Click="Sqr_Click" />
         <Button Content="^" Grid.Row="3" Grid.Column="4" />
-        <Button Content="exp" Grid.Row="3" Grid.Column="5" />
-        <Button Content="10^" Grid.Row="3" Grid.Column="6" />
+        <Button Content="exp" Grid.Row="3" Grid.Column="5" Click="standard_functions" />
+        <Button x:Name="TenPower" Content="10^" Grid.Row="3" Grid.Column="6" Click="standard_functions" />
         <Button x:Name="_9" Content="9" Grid.Column="2" Grid.Row="2" Click="Button_Click"/>
         <Button x:Name="_8" Content="8" Grid.Row="2" Grid.Column="1" Click="Button_Click"/>
         <Button x:Name="Plus" Content="+" Grid.Row="2" Grid.Column="4" Click="Simple_functions" />
@@ -39,15 +39,15 @@
         <Button Content="cos" Grid.Column="5"  Grid.RowSpan="1"  Grid.Row="1"/>
         <Button x:Name="_0" Content="0" Grid.Row="5" Grid.Column="1"  />
         <Button x:Name="Dot" Content="." Grid.Row="5" Grid.Column="2" Click="Dot_Click"  />
-        <Button Content="sh" Grid.Row="5" Grid.Column="3"  />
-        <Button Content="ch" Grid.Row="5" Grid.Column="4"  />
-        <Button Content="th" Grid.Row="5" Grid.Column="5"  />
+        <Button x:Name="Sin" Content="sh" Grid.Row="5" Grid.Column="3" Click="standard_functions"  />
+        <Button x:Name="Cos" Content="ch" Grid.Row="5" Grid.Column="4" Click="standard_functions"  />
+        <Button x:Name="Tan" Content="th" Grid.Row="5" Grid.Column="5" Click="standard_functions"  />
         <Button x:Name="Factorial" Content="!" Grid.Row="5" Grid.Column="6" Click="Simple_functions"  />
         <Button x:Name="_3" Content="3" Grid.Row="4" Grid.Column="2" Click="Button_Click" />
-        <Button Content="\/" Grid.Row="4" Grid.Column="3" />
+        <Button x:Name="sqrt" Content="\/" Grid.Row="4" Grid.Column="3" Click="standard_functions" />
         <Button Content="log" Grid.Row="4" Grid.Column="4" />
-        <Button Content="ln" Grid.Row="4" Grid.Column="5" />
-        <Button Content="lg" Grid.Row="4" Grid.Column="6" />
+        <Button x:Name="Ln" Content="ln" Grid.Row="4" Grid.Column="5" Click="standard_functions" />
+        <Button x:Name="Lg" Content="lg" Grid.Row="4" Grid.Column="6" Click="standard_functions" />
         <Button x:Name="_7" Content="7" Grid.Row="2" Click="Button_Click" />
         <Button x:Name="_1" Content="1" Grid.Row="4" Click="Button_Click" />
         <Button x:Name="_2" Content="2" Grid.Column="1" Grid.Row="4" Click="Button_Click"  />
@@ -56,8 +56,8 @@
         <Button x:Name="Clear" Content="AC" Grid.Row="1" Click="Clear_Click"/>
         <Button x:Name="Backspace" Content="C" Grid.Row="1" Grid.Column="1" Click="Backspace_Click"/>
         <Button Content="=" Grid.Row="1" Grid.Column="2"/>
-        <Button Content="(" Grid.Row="1" Grid.Column="3"/>
-        <Button Content=")" Grid.Row="1" Grid.Column="4"/>
+        <Button x:Name="LeftBrackets" Content="(" Grid.Row="1" Grid.Column="3" Click="Brackets"/>
+        <Button x:Name="RightBrackets" Content=")" Grid.Row="1" Grid.Column="4" Click="Brackets"/>
         <Button Content="tri/hyp" Grid.Row="1" Grid.Column="5"/>
         <Button Content="," Grid.Row="1" Grid.Column="6"/>
         <TextBox x:Name="Display" Grid.ColumnSpan="7" FontSize="30" FontWeight="Bold" FontFamily="Times New Roman" TextAlignment="Right" VerticalContentAlignment="Center" />

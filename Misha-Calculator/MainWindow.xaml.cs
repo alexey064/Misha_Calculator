@@ -22,9 +22,24 @@ namespace Misha_Calculator
     public partial class MainWindow : Window
     {
 
-        bool IsSimpleOperation(Char c)
+        bool IsRightBracket(Char c)
         {
-        return (c == '+' || c == '-' || c == '/' || c == '*');
+            return c == ')';
+        }
+
+        bool IsLeftBracket(Char c)
+        {
+            return c == '(';
+        }
+
+    bool IsSimpleOperation(Char c)
+        {
+            return (c == '+' || c == '-' || c == '/' || c == '*');
+        }
+
+        bool IsDot(Char c)
+        {
+        return c == '.';
         }
 
     bool IsFactorial(Char c)
@@ -166,6 +181,105 @@ namespace Misha_Calculator
             {
                 Display.Text=Display.Text.Remove(Display.Text.Length - 1, 1) + button.Content;
                 separator = button.Content.ToString();
+            }
+        }
+
+        private void Brackets(object sender, RoutedEventArgs e)
+        {
+            var button = (Button) sender;
+            if (IsLeftBracket(button.Content.ToString()[0]))
+            {
+                if (Display.Text == "0")
+                {
+                    Display.Text=button.Content.ToString();
+                    separator = "(";
+                    OpenBrackets++;
+                }
+                else if (Display.Text[Display.Text.Length - 1].IsDigit)
+                {
+                    Display.Text=(Display.Text + "*" + button.Content);
+                    separator = button.Content.ToString();
+                    OpenBrackets++;
+                }
+                else if (IsDot(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text=(Display.Text + "0*(");
+                    separator = button.Content.ToString();
+                    OpenBrackets++;
+                }
+                else if (IsLeftBracket(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text=(Display.Text + button.Content);
+                    separator = button.Content.ToString();
+                    OpenBrackets++;
+                }
+                else if (IsRightBracket(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text=(Display.Text + "*(");
+                    separator = button.Content.ToString();
+                    OpenBrackets++;
+                }
+                else if (IsSimpleOperation(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text=(Display.Text + button.Content);
+                    separator = button.Content.ToString();
+                    OpenBrackets++;
+                }
+            }
+            else if (OpenBrackets > CloseBrackets)
+            {
+                if (IsFactorial(Display.Text[Display.Text.Length - 1]) ||
+                        Display.Text[Display.Text.Length - 1].IsDigit() ||
+                        IsRightBracket(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text=(Display.Text + button.Content);
+                    CloseBrackets++;
+                    separator = button.Content.ToString();
+                }
+                else if (IsDot(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text=(Display.Text + "0)");
+                    CloseBrackets++;
+                    separator = button.Content.ToString();
+                }
+                else if (IsLeftBracket(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text=Display.Text + "0)";
+                    CloseBrackets++;
+                    separator = button.Content.ToString();
+                }
+            }
+        }
+
+        private void standard_functions(object sender, RoutedEventArgs e)
+        {
+            var button = (Button) sender;
+            if (Display.Text == "0" || Display.Text.isEmpty())
+            {
+                Display.Text=(button.Content + "(");
+                separator = "(";
+                OpenBrackets++;
+            }
+            else if (IsFactorial(Display.Text[Display.Text.Length - 1]) ||
+                  Display.Text[Display.Text.Length - 1].isDigit() ||
+                  IsRightBracket(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text=Display.Text + "*" + button.Content + "(";
+                separator = "(";
+                OpenBrackets++;
+            }
+            else if (IsSimpleOperation(Display.Text[Display.Text.Length - 1]) ||
+                     IsLeftBracket(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text=(Display.Text + button.Content + "(");
+                separator = "(";
+                OpenBrackets++;
+            }
+            else if (IsDot(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text=(Display.Text + "0*" + button.Content + "(");
+                separator = "(";
+                OpenBrackets++;
             }
         }
 
