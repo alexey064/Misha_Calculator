@@ -13,5 +13,6 @@ namespace Misha_Calculator
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }
