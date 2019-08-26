@@ -14,7 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Misha_Calculator
-{ 
+{
+    
     
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -22,7 +23,12 @@ namespace Misha_Calculator
     public partial class MainWindow : Window
     {
 
-        bool IsRightBracket(Char c)
+        bool IsDigit(char c)
+        {
+            return (c == 0 || c == 1 || c == 2 || c == 3 || c == 4 || c == 5 || c == 6 || c == 7 || c == 8 || c == 9);
+        }
+
+    bool IsRightBracket(Char c)
         {
             return c == ')';
         }
@@ -74,12 +80,6 @@ namespace Misha_Calculator
                  Display.Text+=Name;
          */
             Display.Text += Name;
-        }
-
-        //Проверка на правую скобку
-        bool IsRightBracket(char c)
-        {
-            return c == ')';
         }
 
         //Нажатие кнопки точка
@@ -149,7 +149,7 @@ namespace Misha_Calculator
                 Display.Text=button.Content.ToString();
             }
             // нужно исправить
-            else if (Display.Text[Display.Text.Length - 1].IsDigit ||
+            else if (IsDigit(Display.Text[Display.Text.Length - 1]) ||
                   IsRightBracket(Display.Text[Display.Text.Length - 1]))
             {
                 Display.Text=Display.Text + "*" + button.Content.ToString();
@@ -169,10 +169,10 @@ namespace Misha_Calculator
         private void Sqr_Click(object sender, RoutedEventArgs e)
         {
             var button = (Button) sender;
-            if (Display.Text[Display.Text.Length - 1].IsDigit ||
+            if (IsDigit(Display.Text[Display.Text.Length - 1]) ||
                     IsRightBracket(Display.Text[Display.Text.Length - 1]) ||
                     IsFactorial(Display.Text[Display.Text.Length - 1]) ||
-                    Display.Text.Split(separator[0]).Last == Pi.Content.ToString())
+                    Display.Text.Split(separator[0]).Last().ToString() == Pi.Content.ToString())
             {
                 Display.Text=Display.Text + button.Content + "*";
                 separator = "*";
@@ -195,7 +195,7 @@ namespace Misha_Calculator
                     separator = "(";
                     OpenBrackets++;
                 }
-                else if (Display.Text[Display.Text.Length - 1].IsDigit)
+                else if (IsDigit(Display.Text[Display.Text.Length - 1]))
                 {
                     Display.Text=(Display.Text + "*" + button.Content);
                     separator = button.Content.ToString();
@@ -229,7 +229,7 @@ namespace Misha_Calculator
             else if (OpenBrackets > CloseBrackets)
             {
                 if (IsFactorial(Display.Text[Display.Text.Length - 1]) ||
-                        Display.Text[Display.Text.Length - 1].IsDigit() ||
+                        IsDigit(Display.Text[Display.Text.Length - 1]) ||
                         IsRightBracket(Display.Text[Display.Text.Length - 1]))
                 {
                     Display.Text=(Display.Text + button.Content);
@@ -261,7 +261,7 @@ namespace Misha_Calculator
                 OpenBrackets++;
             }
             else if (IsFactorial(Display.Text[Display.Text.Length - 1]) ||
-                  Display.Text[Display.Text.Length - 1].isDigit() ||
+                  IsDigit(Display.Text[Display.Text.Length - 1]) ||
                   IsRightBracket(Display.Text[Display.Text.Length - 1]))
             {
                 Display.Text=Display.Text + "*" + button.Content + "(";
@@ -278,6 +278,56 @@ namespace Misha_Calculator
             else if (IsDot(Display.Text[Display.Text.Length - 1]))
             {
                 Display.Text=(Display.Text + "0*" + button.Content + "(");
+                separator = "(";
+                OpenBrackets++;
+            }
+        }
+
+        private void Pow_Click(object sender, RoutedEventArgs e)
+        {
+            var button = (Button)sender;
+            if (IsDigit(Display.Text[Display.Text.Length - 1]) ||
+                    IsFactorial(Display.Text[Display.Text.Length - 1]) ||
+                    IsRightBracket(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text = Display.Text + button.Content + "(";
+                separator = "(";
+                OpenBrackets++;
+            }
+            else if (IsSimpleOperation(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text = (Display.Text.Remove(Display.Text.Length - 1, 1) + button.Content + "(");
+                separator = "(";
+                OpenBrackets++;
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            // Клавиша Log
+            var button = (Button) sender;
+            if (Display.Text == "0")
+            {
+                Display.Text=button.Content + "(";
+                separator = "(";
+                OpenBrackets++;
+            }
+            else if (IsDigit(Display.Text[Display.Text.Length - 1]) ||
+                  IsFactorial(Display.Text[Display.Text.Length - 1]) ||
+                  IsRightBracket(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text=Display.Text + "*" + button.Content + "(";
+            }
+            else if (IsSimpleOperation(Display.Text[Display.Text.Length - 1]) ||
+                    IsLeftBracket(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text=Display.Text + button.Content + "(";
+                separator = "(";
+                OpenBrackets++;
+            }
+            else if (IsDot(Display.Text[Display.Text.Length - 1]))
+            {
+                Display.Text=Display.Text + "0*" + button.Content + "(";
                 separator = "(";
                 OpenBrackets++;
             }

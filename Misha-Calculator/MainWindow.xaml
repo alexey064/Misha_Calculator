@@ -27,7 +27,7 @@
         <Button x:Name="_4" Content="4" Grid.Row="3" Click="Button_Click"  />
         <Button x:Name="_6" Content="6" Grid.Row="3" Grid.Column="2" />
         <Button x:Name="sqr" Content="^2" Grid.Row="3" Grid.Column="3" Click="Sqr_Click" />
-        <Button Content="^" Grid.Row="3" Grid.Column="4" />
+        <Button x:Name="Pow" Content="^" Grid.Row="3" Grid.Column="4" Click="Pow_Click" />
         <Button Content="exp" Grid.Row="3" Grid.Column="5" Click="standard_functions" />
         <Button x:Name="TenPower" Content="10^" Grid.Row="3" Grid.Column="6" Click="standard_functions" />
         <Button x:Name="_9" Content="9" Grid.Column="2" Grid.Row="2" Click="Button_Click"/>
@@ -45,7 +45,7 @@
         <Button x:Name="Factorial" Content="!" Grid.Row="5" Grid.Column="6" Click="Simple_functions"  />
         <Button x:Name="_3" Content="3" Grid.Row="4" Grid.Column="2" Click="Button_Click" />
         <Button x:Name="sqrt" Content="\/" Grid.Row="4" Grid.Column="3" Click="standard_functions" />
-        <Button Content="log" Grid.Row="4" Grid.Column="4" />
+        <Button Content="log" Grid.Row="4" Grid.Column="4" Click="Button_Click_1" />
         <Button x:Name="Ln" Content="ln" Grid.Row="4" Grid.Column="5" Click="standard_functions" />
         <Button x:Name="Lg" Content="lg" Grid.Row="4" Grid.Column="6" Click="standard_functions" />
         <Button x:Name="_7" Content="7" Grid.Row="2" Click="Button_Click" />
