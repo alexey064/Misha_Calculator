@@ -28,16 +28,16 @@
         </Grid.RowDefinitions>
         <Button x:Name="_4" Content="4" Grid.Row="3"  />
         <Button x:Name="_6" Content="6" Grid.Row="3" Grid.Column="2" />
-        <Button x:Name="sqr" Content="^2" Grid.Row="3" Grid.Column="3"  />
+        <Button x:Name="Sqr" Content="^2" Grid.Row="3" Grid.Column="3"  />
         <Button x:Name="Power" Content="^" Grid.Row="3" Grid.Column="4" />
         <Button x:Name="Exp" Content="exp" Grid.Row="3" Grid.Column="5" />
         <Button x:Name="TenPower" Content="10^" Grid.Row="3" Grid.Column="6" />
         <Button x:Name="_9" Content="9" Grid.Column="2" Grid.Row="2" />
         <Button x:Name="_8" Content="8" Grid.Row="2" Grid.Column="1" />
         <Button x:Name="Plus" Content="+" Grid.Row="2" Grid.Column="4"  />
-        <Button x:Name="minus" Content="-" Grid.Column="3" Grid.Row="2"  />
-        <Button x:Name="multi" Content="*" Grid.Column="5" Grid.Row="2" />
-        <Button x:Name="divide" Content="/" Grid.Row="2" Grid.Column="6" />
+        <Button x:Name="Minus" Content="-" Grid.Column="3" Grid.Row="2"  />
+        <Button x:Name="Multi" Content="*" Grid.Column="5" Grid.Row="2" />
+        <Button x:Name="Divide" Content="/" Grid.Row="2" Grid.Column="6" />
         <Button x:Name="Cos" Content="cos" Grid.Column="5"  Grid.RowSpan="1"  Grid.Row="1"/>
         <Button x:Name="_0" Content="0" Grid.Row="5" Grid.Column="1"  />
         <Button x:Name="Dot" Content="." Grid.Row="5" Grid.Column="2"   />
@@ -46,7 +46,7 @@
         <Button x:Name="Th" Content="th" Grid.Row="5" Grid.Column="5"  />
         <Button x:Name="Factorial" Content="!" Grid.Row="5" Grid.Column="6"  />
         <Button x:Name="_3" Content="3" Grid.Row="4" Grid.Column="2"  />
-        <Button x:Name="Sqrt" Content="\/" Grid.Row="4" Grid.Column="3" />
+        <Button x:Name="Sqrt" Content="|/" Grid.Row="4" Grid.Column="3" />
         <Button x:Name="Log" Content="log" Grid.Row="4" Grid.Column="4" />
         <Button x:Name="Ln" Content="ln" Grid.Row="4" Grid.Column="5" />
         <Button x:Name="Lg" Content="lg" Grid.Row="4" Grid.Column="6" />
@@ -54,10 +54,10 @@
         <Button x:Name="_1" Content="1" Grid.Row="4"  />
         <Button x:Name="_2" Content="2" Grid.Column="1" Grid.Row="4"   />
         <Button x:Name="_5" Content="5" Grid.Column="1" Grid.Row="3"  />
-        <Button x:Name="Pi" Content="Pi" Grid.Row="5"  />
+        <Button x:Name="Pi" Content="pi" Grid.Row="5"  />
         <Button x:Name="Clear" Content="AC" Grid.Row="1" />
         <Button x:Name="Backspace" Content="C" Grid.Row="1" Grid.Column="1" />
-        <Button Content="=" Grid.Row="1" Grid.Column="2"/>
+        <Button x:Name="Result" Content="=" Grid.Row="1" Grid.Column="2" />
         <Button x:Name="LeftBracket" Content="(" Grid.Row="1" Grid.Column="3"/>
         <Button x:Name="RightBracket" Content=")" Grid.Row="1" Grid.Column="4"/>
         <Button x:Name="TrigSwitch" Content="tri/hyp" Grid.Row="1" Grid.Column="5"/>
