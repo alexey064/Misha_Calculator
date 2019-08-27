@@ -1,0 +1,8 @@
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\MonoAndroid,Version=v4.4.AssemblyAttributes.cs
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\build.props
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\adb.props
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\Misha_Calculator_Android.csprojAssemblyReference.cache
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\stamp\_BuildLibraryImportsCache.stamp
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\resourcepaths.cache
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\res.flag
+F:\Misha_Calculator-master\Misha_Calculator_Android\obj\Debug\44\flata\compiled.flata
