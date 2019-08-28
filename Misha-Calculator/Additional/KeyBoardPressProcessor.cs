@@ -9,10 +9,7 @@ namespace Misha_Calculator.Additional
     {
         public static void KeyBoardPress(object sender, KeyEventArgs e)
         {
-            switch (e.Key)
-            {
-                
-            }
+            
         }
     }
 }

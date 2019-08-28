@@ -38,6 +38,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.1, )"

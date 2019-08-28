@@ -110,6 +110,7 @@ namespace Misha_Calculator_Android
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+        
     }
 }
 

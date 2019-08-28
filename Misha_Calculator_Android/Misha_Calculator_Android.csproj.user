@@ -3,6 +3,6 @@
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
-    <SelectedDevice>Nexus 9</SelectedDevice>
+    <SelectedDevice>Xiaomi MI 5</SelectedDevice>
   </PropertyGroup>
 </Project>
