@@ -90,9 +90,6 @@ namespace Misha_Calculator
                 case Key.D8: connector.DigitsInput(_8, e); break;
                 case Key.D9: connector.DigitsInput(_9, e); break;
                 case Key.D0: connector.DigitsInput(_0, e); break;
-
-                
-                
             }
         }
     }

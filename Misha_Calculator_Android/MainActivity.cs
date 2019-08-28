@@ -14,16 +14,17 @@ namespace Misha_Calculator_Android
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle savedInstanceState) //Класс выполняется при открытии новой, пустой формы
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            SetContentView(Resource.Layout.activity_main);
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            SetContentView(Resource.Layout.activity_main); //назначаем форму, которая затем отобразится
+            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar); // связь класса с формой
             SetSupportActionBar(toolbar);
 
+            //установление связи между переменной и элемента формы. Установление функции при клике
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
+            fab.Click += FabOnClick;   //fabOnClick - название функции, связанной с кнопкой
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
@@ -31,10 +32,11 @@ namespace Misha_Calculator_Android
             toggle.SyncState();
 
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
-            navigationView.SetNavigationItemSelectedListener(this);
+            navigationView.SetNavigationItemSelectedListener(this); // Такое возможно только из-за второго наследования класса MainActivity.
+            //Его обработчик находится в этом классе в методе OnClick
         }
 
-        public override void OnBackPressed()
+        public override void OnBackPressed() //нажатие системной кнопки назад
         {
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             if(drawer.IsDrawerOpen(GravityCompat.Start))
@@ -43,19 +45,19 @@ namespace Misha_Calculator_Android
             }
             else
             {
-                base.OnBackPressed();
+                base.OnBackPressed(); //его стандартное действие - закрытие формы.Если открыты какие-то подвкладки - то он их закрывает.
             }
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
+        public override bool OnCreateOptionsMenu(IMenu menu) //как я понимаю он отвечает за троеточие сверху.
         {
-            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+            MenuInflater.Inflate(Resource.Menu.menu_main, menu); // связывет форму меню с главной формой
             return true;
         }
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
+        public override bool OnOptionsItemSelected(IMenuItem item) //выполняется при нажатии любого пункта меню из списка
         {
-            int id = item.ItemId;
+            int id = item.ItemId; // записываем в id тот пункт, который выбрали.
             if (id == Resource.Id.action_settings)
             {
                 return true;
@@ -71,7 +73,7 @@ namespace Misha_Calculator_Android
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
 
-        public bool OnNavigationItemSelected(IMenuItem item)
+        public bool OnNavigationItemSelected(IMenuItem item) //выбор любого элемента из менюшки слева. Она также открывается свайпом.
         {
             int id = item.ItemId;
 
@@ -104,6 +106,8 @@ namespace Misha_Calculator_Android
             drawer.CloseDrawer(GravityCompat.Start);
             return true;
         }
+
+        //я не знаю что это, но очень похоже на объявление какого то разрешения. Хотя я не помню чтобы в программе они использовались.
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
