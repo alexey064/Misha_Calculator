@@ -12,7 +12,7 @@ using Android.Views;
 namespace Misha_Calculator_Android
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
+    public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState) //Класс выполняется при открытии новой, пустой формы
         {
@@ -21,19 +21,6 @@ namespace Misha_Calculator_Android
             SetContentView(Resource.Layout.activity_main); //назначаем форму, которая затем отобразится
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar); // связь класса с формой
             SetSupportActionBar(toolbar);
-
-            //установление связи между переменной и элемента формы. Установление функции при клике
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;   //fabOnClick - название функции, связанной с кнопкой
-
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
-            drawer.AddDrawerListener(toggle);
-            toggle.SyncState();
-
-            NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
-            navigationView.SetNavigationItemSelectedListener(this); // Такое возможно только из-за второго наследования класса MainActivity.
-            //Его обработчик находится в этом классе в методе OnClick
         }
 
         public override void OnBackPressed() //нажатие системной кнопки назад
@@ -66,47 +53,6 @@ namespace Misha_Calculator_Android
             return base.OnOptionsItemSelected(item);
         }
 
-        private void FabOnClick(object sender, EventArgs eventArgs)
-        {
-            View view = (View) sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-        }
-
-        public bool OnNavigationItemSelected(IMenuItem item) //выбор любого элемента из менюшки слева. Она также открывается свайпом.
-        {
-            int id = item.ItemId;
-
-            if (id == Resource.Id.nav_camera)
-            {
-                // Handle the camera action
-            }
-            else if (id == Resource.Id.nav_gallery)
-            {
-
-            }
-            else if (id == Resource.Id.nav_slideshow)
-            {
-
-            }
-            else if (id == Resource.Id.nav_manage)
-            {
-
-            }
-            else if (id == Resource.Id.nav_share)
-            {
-
-            }
-            else if (id == Resource.Id.nav_send)
-            {
-
-            }
-
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            drawer.CloseDrawer(GravityCompat.Start);
-            return true;
-        }
-
         //я не знаю что это, но очень похоже на объявление какого то разрешения. Хотя я не помню чтобы в программе они использовались.
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -114,7 +60,6 @@ namespace Misha_Calculator_Android
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-        
     }
 }
 
