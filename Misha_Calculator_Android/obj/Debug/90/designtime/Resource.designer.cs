@@ -137,37 +137,10 @@ namespace Misha_Calculator_Android
 			public const int button1 = 2130968577;
 			
 			// aapt resource value: 0x7F040002
-			public const int drawer_layout = 2130968578;
+			public const int textView1 = 2130968578;
 			
 			// aapt resource value: 0x7F040003
-			public const int imageView = 2130968579;
-			
-			// aapt resource value: 0x7F040004
-			public const int nav_camera = 2130968580;
-			
-			// aapt resource value: 0x7F040005
-			public const int nav_gallery = 2130968581;
-			
-			// aapt resource value: 0x7F040006
-			public const int nav_manage = 2130968582;
-			
-			// aapt resource value: 0x7F040007
-			public const int nav_send = 2130968583;
-			
-			// aapt resource value: 0x7F040008
-			public const int nav_share = 2130968584;
-			
-			// aapt resource value: 0x7F040009
-			public const int nav_slideshow = 2130968585;
-			
-			// aapt resource value: 0x7F04000A
-			public const int textView = 2130968586;
-			
-			// aapt resource value: 0x7F04000B
-			public const int textView1 = 2130968587;
-			
-			// aapt resource value: 0x7F04000C
-			public const int toolbar = 2130968588;
+			public const int toolbar = 2130968579;
 			
 			static Id()
 			{
@@ -183,19 +156,16 @@ namespace Misha_Calculator_Android
 		{
 			
 			// aapt resource value: 0x7F050000
-			public const int activity_main = 2131034112;
+			public const int app_bar_main = 2131034112;
 			
 			// aapt resource value: 0x7F050001
-			public const int app_bar_main = 2131034113;
+			public const int content_main = 2131034113;
 			
 			// aapt resource value: 0x7F050002
-			public const int content_main = 2131034114;
+			public const int Demo = 2131034114;
 			
 			// aapt resource value: 0x7F050003
 			public const int layout_Advanced = 2131034115;
-			
-			// aapt resource value: 0x7F050004
-			public const int nav_header_main = 2131034116;
 			
 			static Layout()
 			{
@@ -211,10 +181,7 @@ namespace Misha_Calculator_Android
 		{
 			
 			// aapt resource value: 0x7F060000
-			public const int activity_main_drawer = 2131099648;
-			
-			// aapt resource value: 0x7F060001
-			public const int menu_main = 2131099649;
+			public const int menu_main = 2131099648;
 			
 			static Menu()
 			{

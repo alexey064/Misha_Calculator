@@ -18,22 +18,9 @@ namespace Misha_Calculator_Android
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            SetContentView(Resource.Layout.activity_main); //назначаем форму, которая затем отобразится
+            SetContentView(Resource.Layout.app_bar_main); //назначаем форму, которая затем отобразится
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar); // связь класса с формой
             SetSupportActionBar(toolbar);
-        }
-
-        public override void OnBackPressed() //нажатие системной кнопки назад
-        {
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            if(drawer.IsDrawerOpen(GravityCompat.Start))
-            {
-                drawer.CloseDrawer(GravityCompat.Start);
-            }
-            else
-            {
-                base.OnBackPressed(); //его стандартное действие - закрытие формы.Если открыты какие-то подвкладки - то он их закрывает.
-            }
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu) //как я понимаю он отвечает за троеточие сверху.
