@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Misha_Calculator-master\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {}
+    "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {}
   },
   "projects": {
-    "F:\\Misha_Calculator-master\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {
+    "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Misha_Calculator-master\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
+        "projectUniqueName": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
         "projectName": "Misha_Calculator_Android",
-        "projectPath": "F:\\Misha_Calculator-master\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
+        "projectPath": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
         "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-        "outputPath": "F:\\Misha_Calculator-master\\Misha_Calculator_Android\\obj\\",
+        "outputPath": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.design.circularreveal.CircularRevealLinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -28,26 +28,31 @@
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1">
-        <Button
+    android:layout_weight="1"
+        >
+        <android.support.design.button.MaterialButton
             android:text="AC"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_weight="1"
             android:id="@+id/button1"/>
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="(" />
-        <Button
+            android:text="("/>
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text=")" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -58,25 +63,29 @@
     android:layout_height="match_parent"
     android:layout_weight="1">
 
-        <Button
+        <android.support.design.button.MaterialButton
             android:text="7"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_weight="1"
             android:id="@+id/button1" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="8" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="9" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -86,25 +95,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1">
-        <Button
+        <android.support.design.button.MaterialButton
             android:text="4"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_weight="1"
             android:id="@+id/button1" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="5" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="6" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -114,7 +127,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1">
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:text="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -122,17 +136,20 @@
             android:minHeight="25px"
             android:layout_weight="1"
             android:id="@+id/button1" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="3" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -143,7 +160,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1">
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:text="."
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -152,21 +170,24 @@
             android:layout_weight="1"
             android:id="@+id/button1"
             tools:text="." />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="0" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="=" />
-        <Button
+        <android.support.design.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="/" />
         </LinearLayout>
 
- </LinearLayout>
+ </android.support.design.circularreveal.CircularRevealLinearLayout>
