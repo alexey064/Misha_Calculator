@@ -18,7 +18,7 @@ namespace Misha_Calculator_Android
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            SetContentView(Resource.Layout.app_bar_main); //назначаем форму, которая затем отобразится
+            SetContentView(Resource.Layout.content_main); //назначаем форму, которая затем отобразится
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar); // связь класса с формой
             SetSupportActionBar(toolbar);
         }
