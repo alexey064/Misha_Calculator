@@ -5,7 +5,7 @@ using System.Text;
 using MathNet.Numerics;
 using System.Diagnostics;
 
-namespace Misha_Calculator.Additional
+namespace Misha_Calculator_Android
 {
     /// <summary>
     /// stores methods for math expressions calculation

@@ -10,7 +10,5 @@
 /Misha-Calculator/obj/Debug
 /Misha_Calculator_Android/bin/Debug
 /Misha_Calculator_Android/obj/.cache
-/Misha_Calculator_Android/obj/Debug/90/android/assets
-/Misha_Calculator_Android/obj/Debug/90/android/bin
-/Misha_Calculator_Android/obj/Debug/90/android
-/Misha_Calculator_Android/obj/Debug/90/app_shared_libraries
+/Misha_Calculator_Android/obj/Debug/*
+/Misha_Calculator_Android/obj/Release/*

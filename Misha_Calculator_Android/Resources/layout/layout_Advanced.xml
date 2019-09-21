@@ -10,9 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
-
+        
         <android.support.design.button.MaterialButton
             android:text="^2"
+            android:id="@+id/step2"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -23,10 +24,12 @@
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/sqrt"
             android:layout_weight="1"/>
 
         <android.support.design.button.MaterialButton
             android:text="sin"
+            android:id="@+id/sin"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -41,24 +44,27 @@
 
         <android.support.design.button.MaterialButton
             android:text="^"
+            android:id="@+id/Power"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-        android:layout_weight="1"/>
+            android:layout_weight="1"/>
 
         <android.support.design.button.MaterialButton
             android:text="log"
+            android:id="@+id/log"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-        android:layout_weight="1"/>
+            android:layout_weight="1"/>
 
         <android.support.design.button.MaterialButton
-            android:text="^cos"
+            android:text="cos"
+            android:id="@+id/cos"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-        android:layout_weight="1"/>
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
@@ -69,6 +75,7 @@
 
         <android.support.design.button.MaterialButton
             android:text="10^"
+            android:id="@+id/tenPower"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -76,6 +83,7 @@
 
         <android.support.design.button.MaterialButton
             android:text="lg"
+            android:id="@+id/lg"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -83,6 +91,7 @@
 
         <android.support.design.button.MaterialButton
             android:text="tg"
+            android:id="@+id/tg"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -97,6 +106,7 @@
 
         <android.support.design.button.MaterialButton
             android:text="exp"
+            android:id="@+id/exp"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -104,6 +114,7 @@
 
         <android.support.design.button.MaterialButton
             android:text="ln"
+            android:id="@+id/ln"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -111,6 +122,7 @@
 
         <android.support.design.button.MaterialButton
             android:text="tri/hyp"
+            android:id="@+id/TriHyp"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

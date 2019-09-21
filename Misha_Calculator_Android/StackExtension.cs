@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Misha_Calculator.Additional
+namespace Misha_Calculator_Android
 {
     public static class StackExtension
     {

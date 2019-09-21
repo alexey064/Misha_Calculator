@@ -5,7 +5,7 @@ using System.Windows;
 using System.Diagnostics;
 using Android.Widget;
 
-namespace Misha_Calculator.Additional
+namespace Misha_Calculator_Android
 {
     /// <summary>
     /// stores usefull methods for calculator graphical interface
