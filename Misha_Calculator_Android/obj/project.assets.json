@@ -5,10 +5,14 @@
       "MathNet.Numerics/4.8.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/MathNet.Numerics.dll": {}
+          "lib/netstandard2.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/MathNet.Numerics.dll": {}
+          "lib/netstandard2.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -733,10 +737,14 @@
           "System.Numerics.Vectors"
         ],
         "compile": {
-          "lib/monoandroid90/Xamarin.Essentials.dll": {}
+          "lib/monoandroid90/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/monoandroid90/Xamarin.Essentials.dll": {}
+          "lib/monoandroid90/Xamarin.Essentials.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       }
     }
@@ -1561,26 +1569,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Алексей\\.nuget\\packages\\": {},
-    "f:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
+      "projectUniqueName": "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
       "projectName": "Misha_Calculator_Android",
-      "projectPath": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
-      "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-      "outputPath": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\obj\\",
+      "projectPath": "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "f:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"

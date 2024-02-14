@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {}
+    "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {}
   },
   "projects": {
-    "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {
+    "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
+        "projectUniqueName": "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
         "projectName": "Misha_Calculator_Android",
-        "projectPath": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
-        "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-        "outputPath": "F:\\Repos\\Misha_Calculator\\Misha_Calculator_Android\\obj\\",
+        "projectPath": "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\Misha_Calculator_Android.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\User\\Documents\\projects\\Misha_Calculator\\Misha_Calculator_Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "f:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
