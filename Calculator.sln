@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misha_Calculator_Android", "Misha_Calculator_Android\Misha_Calculator_Android.csproj", "{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsDesktop", "WindowsDesktop\WindowsDesktop.csproj", "{83A00959-580D-41FB-90B7-10E768913A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathexprProcessorCs", "MathexprProcessorCs\MathexprProcessorCs.csproj", "{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathexprProcessorCpp", "MathexprProcessorCpp\MathexprProcessorCpp.vcxproj", "{6AF122AE-EE35-4807-8678-CF16F3CD92A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Debug|x64.ActiveCfg = Debug|x64
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Debug|x86.ActiveCfg = Debug|x64
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Debug|x86.Build.0 = Debug|x64
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Debug|x86.Deploy.0 = Debug|x64
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Release|x64.ActiveCfg = Release|x64
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Release|x86.ActiveCfg = Release|x64
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Release|x86.Build.0 = Release|x64
+		{7E46A14D-7985-4540-B0EB-9D4E0ADDADB2}.Release|x86.Deploy.0 = Release|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Debug|x64.ActiveCfg = Debug|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Debug|x64.Build.0 = Debug|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Debug|x86.ActiveCfg = Debug|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Debug|x86.Build.0 = Debug|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Release|x64.ActiveCfg = Release|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Release|x64.Build.0 = Release|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Release|x86.ActiveCfg = Release|x64
+		{83A00959-580D-41FB-90B7-10E768913A7F}.Release|x86.Build.0 = Release|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Debug|x64.ActiveCfg = Debug|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Debug|x64.Build.0 = Debug|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Debug|x86.ActiveCfg = Debug|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Debug|x86.Build.0 = Debug|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Release|x64.ActiveCfg = Release|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Release|x64.Build.0 = Release|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Release|x86.ActiveCfg = Release|x64
+		{1615BF1E-F479-4895-8D5B-20D9DC6D2A01}.Release|x86.Build.0 = Release|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Debug|x64.ActiveCfg = Debug|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Debug|x64.Build.0 = Debug|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Debug|x86.ActiveCfg = Debug|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Debug|x86.Build.0 = Debug|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Release|x64.ActiveCfg = Release|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Release|x64.Build.0 = Release|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Release|x86.ActiveCfg = Release|x64
+		{6AF122AE-EE35-4807-8678-CF16F3CD92A7}.Release|x86.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {779A7FE7-8A78-45BD-8E4D-51DDF229629A}
+	EndGlobalSection
+EndGlobal

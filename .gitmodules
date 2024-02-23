@@ -1,0 +1,4 @@
+
+[submodule "MathexprProcessorCpp/mathexpr"]
+	path = MathexprProcessorCpp/mathexpr
+	url = https://github.com/MichaelMakarov/mathexpr.git
